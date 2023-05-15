@@ -19,14 +19,14 @@ resources:
   - name: dbp_build_info1
     type: BuildInfo
     configuration:
-      sourceArtifactory: myArtifactory
+      sourceArtifactory: JMArtifactory
       buildName: dbp_build
       buildNumber: 1    
 
   - name: dbp_promoted_build_info1
     type: BuildInfo
     configuration:
-      sourceArtifactory: myArtifactory
+      sourceArtifactory: JMArtifactory
       buildName: dbp_build
       buildNumber: 1
           
@@ -44,7 +44,7 @@ pipelines:
           inputResources:
             - name: dbp_repo1
           integrations:
-            - name: myArtifactory                            # <-- replace with your artifactory integration
+            - name: JMArtifactory                            # <-- replace with your artifactory integration
         execution:
           onStart:
               # - msg="Run description updated from step $step_id"
@@ -78,7 +78,7 @@ pipelines:
         configuration:
           targetRepository: quickstarts-target-local
           integrations:
-            - name: myArtifactory
+            - name: JMArtifactory
           inputResources:
             - name: dbp_build_info1
           outputResources:
