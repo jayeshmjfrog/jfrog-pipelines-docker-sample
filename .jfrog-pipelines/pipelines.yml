@@ -54,7 +54,7 @@ pipelines:
             - task: jfrog/docker-build@v0.0.1
               repository: pipelines-tasks-virtual
               input:
-                resourceName: msgGit
+                resourceName: dbp_repo1
                 dockerImage: pipelines.jfrog.io/quickstarts-docker-local/dbp:${run_number}
                 dockerFileName: Dockerfile
             - task: jfrog/docker-push@v0.0.1
