@@ -30,7 +30,7 @@ resources:
       buildName: dbp_build
       buildNumber: 1
           
-      
+
 
 pipelines:
   - name: Docker_Quickstart
