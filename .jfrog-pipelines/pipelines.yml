@@ -31,7 +31,6 @@ resources:
       buildNumber: 1
           
 
-
 pipelines:
   - name: Docker_Quickstart
     configuration:
