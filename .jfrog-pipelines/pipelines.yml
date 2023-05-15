@@ -3,7 +3,7 @@ resources:
     type: GitRepo
     configuration:
       gitProvider: JFPGit                       # <-- replace with your integration
-      path: jfrog/jfrog-pipelines-docker-sample    # <-- replace with your repository name
+      path: jayeshmjfrog/jfrog-pipelines-docker-sample    # <-- replace with your repository name
       branches:
         include: master
 
