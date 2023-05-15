@@ -2,7 +2,7 @@ resources:
   - name: dbp_repo1
     type: GitRepo
     configuration:
-      gitProvider: JMGit                       # <-- replace with your integration
+      gitProvider: JFGit                       # <-- replace with your integration
       path: jfrog/jfrog-pipelines-docker-sample    # <-- replace with your repository name
       branches:
         include: master
